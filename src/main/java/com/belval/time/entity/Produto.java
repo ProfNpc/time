@@ -113,7 +113,9 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "BlablaBla";
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		return "Produto [id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", preco=" + preco
+				+ ", dataCriacao=" + sdf.format(dataCriacao) + "]";
 	}
 
 	
